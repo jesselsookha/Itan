@@ -1,0 +1,159 @@
+site_name: Itan
+site_description: >
+  A portfolio development framework for students and emerging professionals.
+  Build your story. Make your work visible. Let it last beyond graduation.
+site_author: Jessel Sookha
+site_url: https://jesselsookha.github.io/Itan/
+
+repo_name: jesselsookha/Itan
+repo_url: https://github.com/jesselsookha/Itan
+edit_uri: ""
+
+copyright: >
+  Itan — developed by Jessel Sookha.
+  Open for use, adaptation, and sharing.
+
+# ---------------------------------------------------------------------------
+# Theme
+# ---------------------------------------------------------------------------
+theme:
+  name: material
+  # custom_dir: overrides        # Uncomment when custom overrides are added
+
+  palette:
+    # Light mode (default)
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  font:
+    text: Inter           # Replace with preferred Google Font after content phase
+    code: JetBrains Mono  # Clean monospace for any code snippets
+
+  features:
+    - navigation.tabs           # Top-level sections as tabs
+    - navigation.tabs.sticky    # Tabs remain visible on scroll
+    - navigation.sections       # Expand sections in left nav
+    - navigation.indexes        # Section index pages (Part landing pages)
+    - navigation.top            # Back-to-top button
+    - navigation.footer         # Previous / Next navigation at page bottom
+    - search.highlight          # Highlight search terms on result pages
+    - search.suggest            # Search autocomplete
+    - content.tooltips          # Hover tooltips on abbreviations
+    - toc.follow                # Table of contents follows scroll
+
+  icon:
+    repo: fontawesome/brands/github
+
+# ---------------------------------------------------------------------------
+# Plugins
+# ---------------------------------------------------------------------------
+plugins:
+  - search:
+      lang: en
+  - minify:
+      minify_html: true
+
+# ---------------------------------------------------------------------------
+# Extensions
+# ---------------------------------------------------------------------------
+markdown_extensions:
+  - admonition                  # Note / tip / warning callout blocks
+  - pymdownx.details            # Collapsible admonition blocks
+  - pymdownx.superfences        # Fenced code blocks with language support
+  - pymdownx.tabbed:
+      alternate_style: true     # Tabbed content blocks
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list                   # Add attributes to elements
+  - md_in_html                  # Markdown inside HTML blocks
+  - toc:
+      permalink: true           # Anchor links on headings
+      title: On this page
+  - tables
+  - footnotes
+
+# ---------------------------------------------------------------------------
+# Navigation
+# ---------------------------------------------------------------------------
+nav:
+  - Home: index.md
+
+  - Part Ⅰ — Foundations:
+    - foundations/index.md
+    - What a Portfolio Actually Is: foundations/01-what-is-a-portfolio.md
+    - The Five Portfolio Stages: foundations/02-five-stages.md
+    - Portfolio, CV, and Platforms: foundations/03-portfolio-cv-platforms.md
+
+  - Part Ⅱ — Identity:
+    - identity/index.md
+    - Your Narrative Anchor: identity/01-narrative-anchor.md
+    - Writing Your Bio and Positioning: identity/02-bio-and-positioning.md
+    - Identity Across Platforms: identity/03-identity-across-platforms.md
+
+  - Part Ⅲ — Curation:
+    - curation/index.md
+    - What Belongs in a Portfolio: curation/01-what-belongs.md
+    - Quality Over Quantity: curation/02-quality-over-quantity.md
+    - Retrospective Gathering: curation/03-retrospective-gathering.md
+    - Master Portfolio and Tailored Versions: curation/04-master-and-tailored.md
+
+  - Part Ⅳ — Case Studies:
+    - case-studies/index.md
+    - What a Case Study Is: case-studies/01-what-is-a-case-study.md
+    - The Universal Structure: case-studies/02-universal-structure.md
+    - Weak, Mid-Level, and Strong: case-studies/03-levels-of-quality.md
+    - Documenting Different Project Types: case-studies/04-project-types.md
+
+  - Part Ⅴ — By Discipline:
+    - disciplines/index.md
+    - CS and IT: disciplines/01-cs-and-it.md
+    - Engineering: disciplines/02-engineering.md
+    - Design and UX: disciplines/03-design-and-ux.md
+    - Data Science and Research: disciplines/04-data-science-and-research.md
+    - Education and Applied Social: disciplines/05-education-and-social.md
+    - Business and Marketing: disciplines/06-business-and-marketing.md
+    - Other Disciplines: disciplines/07-other-disciplines.md
+
+  - Part Ⅵ — Entry Points:
+    - entry-points/index.md
+    - Starting Fresh: entry-points/01-starting-fresh.md
+    - Final Year and the Capstone: entry-points/02-final-year.md
+    - Postgraduate — The Translational Model: entry-points/03-postgraduate.md
+    - Building Quickly from Existing Work: entry-points/04-building-quickly.md
+
+  - Part Ⅶ — Platforms:
+    - platforms/index.md
+    - GitHub as Portfolio: platforms/01-github.md
+    - Personal Websites: platforms/02-personal-websites.md
+    - Behance, Dribbble, and Field Platforms: platforms/03-field-platforms.md
+    - LinkedIn — Presence, Not Portfolio: platforms/04-linkedin.md
+    - Print — When It Still Matters: platforms/05-print.md
+
+  - Part Ⅷ — Keeping It Alive:
+    - keeping-it-alive/index.md
+    - The Portfolio as a Living System: keeping-it-alive/01-living-system.md
+    - When and How to Update: keeping-it-alive/02-when-and-how.md
+    - The Three Trajectories: keeping-it-alive/03-three-trajectories.md
+
+# ---------------------------------------------------------------------------
+# Extra
+# ---------------------------------------------------------------------------
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jesselsookha/Itan
+      name: Itan on GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/jesselsookha/
+      name: Jessel Sookha on LinkedIn
+
+extra_css:
+  - stylesheets/extra.css       # Custom colours and fonts — populated after content phase
